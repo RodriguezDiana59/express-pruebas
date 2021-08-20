@@ -1,8 +1,8 @@
-import { mostrarUsuarios, insertarUsuarios, actualizarUsuarios, eliminarUsuarios } from "../controllers/user"; 
+import { añadirClase, entrarClase, cambiarClase, tareasClase } from "../controllers/class"; 
 import { Router } from "express";
 const router = Router ();
 
-router.get('/usuarios', mostrarUsuarios);
-router.post('/usuarios', insertarUsuarios);
-router.put('/usuarios', actualizarUsuarios);
-router.delete('/usuarios', eliminarUsuarios);
+router.get('/clase', añadirClase);
+router.post('/clase', entrarClase);
+router.put('/clase', cambiarClase);
+router.delete('/clase', tareasClase);
